@@ -167,11 +167,11 @@ java -jar myapp.jar
 
 * Using http://dropwizard.io/ to make it simple.
 
- * one [JAX-RS GET resource](src/main/java/krystiannowak/helloworld/HelloWorldResource.java)
+ * one [JAX-RS GET resource](https://github.com/krystiannowak/Docker-in-Java-development/blob/master/src/main/java/krystiannowak/helloworld/HelloWorldResource.java)
  
  * one `java.util.concurrent.atomic.AtomicLong` counter
  
- * one [simple config file](helloworld.yml)
+ * one [simple config file](https://github.com/krystiannowak/Docker-in-Java-development/blob/master/helloworld.yml)
 
 * Run by a similar command:
 ```shell
@@ -185,7 +185,7 @@ java -jar target/helloworld-1.0-SNAPSHOT.jar server helloworld.yml
 
 * https://github.com/spotify/docker-maven-plugin
 
-* the plugin in use - [project's POM](pom.xml)
+* the plugin in use - [project's POM](https://github.com/krystiannowak/Docker-in-Java-development/blob/master/pom.xml)
 
 * let's see what it does:
 ```shell
@@ -287,7 +287,7 @@ Content-Length: 61
 {"Hello World":{"healthy":true},"deadlocks":{"healthy":true}}
 ```
 
-* example naive implementation in [HelloWorldHealthCheck](src/main/java/krystiannowak/helloworld/HelloWorldHealthCheck.java)
+* example naive implementation in [HelloWorldHealthCheck](https://github.com/krystiannowak/Docker-in-Java-development/blob/master/src/main/java/krystiannowak/helloworld/HelloWorldHealthCheck.java)
  
  * real check should probe something meaningful for availability of the application e.g. accessibility of external resources
  
@@ -315,10 +315,10 @@ Content-Length: 61
 
 * comes with already predefined test containers e.g. PostgreSQL, MySQL, Nginx or Selenium
 exposing specific properties to be used in tests e.g. `java.sql.Connection`
- * an example of testing PostgreSQL built-in procedures - [PostgresqlDBTest](src/test/java/krystiannowak/helloworld/db/PostgresqlDBTest.java)
+ * an example of testing PostgreSQL built-in procedures - [PostgresqlDBTest](https://github.com/krystiannowak/Docker-in-Java-development/blob/master/src/test/java/krystiannowak/helloworld/db/PostgresqlDBTest.java)
 
 * a generic test container can be used (or extended) to support e.g. MongoDB
- * an example of testing MongoDB server metadata - [MongoDBTest](src/test/java/krystiannowak/helloworld/db/MongoDBTest.java)
+ * an example of testing MongoDB server metadata - [MongoDBTest](https://github.com/krystiannowak/Docker-in-Java-development/blob/master/src/test/java/krystiannowak/helloworld/db/MongoDBTest.java)
 
 * multiple test containers depending on each other -> use `org.junit.rules.RuleChain` to chain them together
 

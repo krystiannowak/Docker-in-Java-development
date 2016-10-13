@@ -126,7 +126,7 @@
             <plugin>
                 <groupId>com.holidaycheck</groupId>
                 <artifactId>marathon-maven-plugin</artifactId>
-                <version>0.0.4-SNAPSHOT</version>
+                <version>0.0.2</version>
                 <configuration>
                     <image>krystiannowak/helloworld</image>
                     <marathonHost>http://m1.dcos/marathon</marathonHost>

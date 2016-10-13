@@ -256,7 +256,7 @@ Hello World! Counter value = 1
 * remember about healthcheck URL for Marathon in your app e.g.
 
 ```shell
-C:\devel\jug\docker>curl -i http://docker:8080/admin/healthcheck
+curl -i http://docker:8080/admin/healthcheck
 HTTP/1.1 200 OK
 Date: Wed, 12 Oct 2016 21:43:48 GMT
 Content-Type: application/json
